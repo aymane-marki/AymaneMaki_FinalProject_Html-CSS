@@ -1906,6 +1906,24 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-\[10\%\] {
+    border-radius: 10%;
+  }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
+  }
+  .rounded-\[70\%\] {
+    border-radius: 70%;
+  }
+  .rounded-\[100\%\] {
+    border-radius: 100%;
+  }
+  .rounded-\[700\%\] {
+    border-radius: 700%;
+  }
+  .rounded-\[1000\%\] {
+    border-radius: 1000%;
+  }
   .rounded-box {
     border-radius: var(--radius-box);
   }
@@ -1936,6 +1954,10 @@
   .rounded-t-\[50\%\] {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+  }
+  .rounded-t-\[50\] {
+    border-top-left-radius: 50;
+    border-top-right-radius: 50;
   }
   .rounded-t-\[60\%\] {
     border-top-left-radius: 60%;
@@ -2036,6 +2058,9 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#ffede7\] {
+    background-color: #ffede7;
+  }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
@@ -2127,6 +2152,12 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-\[5rem\] {
+    padding-inline: 5rem;
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);

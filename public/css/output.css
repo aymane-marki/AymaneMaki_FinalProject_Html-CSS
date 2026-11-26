@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-50: oklch(98% 0.016 73.684);
     --color-orange-100: oklch(95.4% 0.038 75.164);
     --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-amber-50: oklch(98.7% 0.022 95.277);
@@ -17,6 +18,7 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-green-900: oklch(39.3% 0.095 152.535);
     --color-green-950: oklch(26.6% 0.065 152.934);
     --color-mauve-900: oklch(21.2% 0.019 322.12);
     --color-white: #fff;
@@ -1684,6 +1686,9 @@
   .hidden {
     display: none;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
   .table {
     display: table;
   }
@@ -1849,6 +1854,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -1909,8 +1917,14 @@
   .rounded-\[10\%\] {
     border-radius: 10%;
   }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-\[50\%\] {
     border-radius: 50%;
+  }
+  .rounded-\[50px\] {
+    border-radius: 50px;
   }
   .rounded-\[70\%\] {
     border-radius: 70%;
@@ -2058,8 +2072,26 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-\[\#3c4b38\] {
+    background-color: #3c4b38;
+  }
+  .bg-\[\#a04017\] {
+    background-color: #a04017;
+  }
+  .bg-\[\#e5f6db\] {
+    background-color: #e5f6db;
+  }
+  .bg-\[\#f7e9d8\] {
+    background-color: #f7e9d8;
+  }
   .bg-\[\#ffede7\] {
     background-color: #ffede7;
+  }
+  .bg-\[\#fff8f2\] {
+    background-color: #fff8f2;
+  }
+  .bg-\[orange-50\] {
+    background-color: orange-50;
   }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
@@ -2075,6 +2107,15 @@
   }
   .bg-base-100 {
     background-color: var(--color-base-100);
+  }
+  .bg-green-900 {
+    background-color: var(--color-green-900);
+  }
+  .bg-green-950 {
+    background-color: var(--color-green-950);
+  }
+  .bg-orange-50 {
+    background-color: var(--color-orange-50);
   }
   .bg-orange-100 {
     background-color: var(--color-orange-100);
@@ -2106,6 +2147,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   @layer daisyui.l1.l2.l3 {
     .menu-title {
@@ -2159,6 +2203,9 @@
   .px-\[5rem\] {
     padding-inline: 5rem;
   }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -2170,6 +2217,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -2285,6 +2335,9 @@
   .text-\[1\.2rem\] {
     font-size: 1.2rem;
   }
+  .text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
   .text-\[1\.5rem\] {
     font-size: 1.5rem;
   }
@@ -2316,11 +2369,23 @@
   .text-\[\#382c28\] {
     color: #382c28;
   }
+  .text-\[\#263422\] {
+    color: #263422;
+  }
+  .text-\[\#566451\] {
+    color: #566451;
+  }
   .text-\[\#\] {
     color: #;
   }
   .text-\[\#a04017\] {
     color: #a04017;
+  }
+  .text-\[1\.4\] {
+    color: 1.4;
+  }
+  .text-\[1\.5\] {
+    color: 1.5;
   }
   .text-\[1\] {
     color: 1;

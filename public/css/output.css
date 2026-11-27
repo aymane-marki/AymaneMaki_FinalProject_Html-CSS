@@ -2646,6 +2646,9 @@
     .max-sm\:py-7 {
       padding-block: calc(var(--spacing) * 7);
     }
+    .max-sm\:pl-10 {
+      padding-left: calc(var(--spacing) * 10);
+    }
     .max-sm\:text-center {
       text-align: center;
     }
@@ -2708,6 +2711,12 @@
     .lg\:w-\[90\%\] {
       width: 90%;
     }
+    .lg\:items-center {
+      align-items: center;
+    }
+    .lg\:justify-around {
+      justify-content: space-around;
+    }
     .lg\:justify-between {
       justify-content: space-between;
     }
@@ -2722,6 +2731,9 @@
     }
     .lg\:px-20 {
       padding-inline: calc(var(--spacing) * 20);
+    }
+    .lg\:pl-20 {
+      padding-left: calc(var(--spacing) * 20);
     }
   }
 }

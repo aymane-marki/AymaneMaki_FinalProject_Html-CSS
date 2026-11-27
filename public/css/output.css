@@ -2000,6 +2000,10 @@
     border-top-left-radius: 0%;
     border-top-right-radius: 0%;
   }
+  .rounded-t-\[4rem\] {
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+  }
   .rounded-t-\[10rem\] {
     border-top-left-radius: 10rem;
     border-top-right-radius: 10rem;
@@ -2064,6 +2068,10 @@
   }
   .rounded-tr-lg {
     border-top-right-radius: var(--radius-lg);
+  }
+  .rounded-b-\[4rem\] {
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
   }
   .rounded-br-4xl {
     border-bottom-right-radius: var(--radius-4xl);
@@ -2693,6 +2701,12 @@
     }
     .lg\:w-\[33\%\] {
       width: 33%;
+    }
+    .lg\:w-\[80\%\] {
+      width: 80%;
+    }
+    .lg\:w-\[90\%\] {
+      width: 90%;
     }
     .lg\:justify-between {
       justify-content: space-between;

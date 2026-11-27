@@ -2643,11 +2643,17 @@
     .max-sm\:gap-6 {
       gap: calc(var(--spacing) * 6);
     }
+    .max-sm\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
     .max-sm\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
     }
     .max-sm\:py-7 {
       padding-block: calc(var(--spacing) * 7);
+    }
+    .max-sm\:py-10 {
+      padding-block: calc(var(--spacing) * 10);
     }
     .max-sm\:pl-10 {
       padding-left: calc(var(--spacing) * 10);
@@ -2729,6 +2735,9 @@
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
+    .lg\:gap-20 {
+      gap: calc(var(--spacing) * 20);
+    }
     .lg\:gap-40 {
       gap: calc(var(--spacing) * 40);
     }
@@ -2738,8 +2747,18 @@
     .lg\:px-20 {
       padding-inline: calc(var(--spacing) * 20);
     }
+    .lg\:py-20 {
+      padding-block: calc(var(--spacing) * 20);
+    }
     .lg\:pl-20 {
       padding-left: calc(var(--spacing) * 20);
+    }
+    .lg\:pl-24 {
+      padding-left: calc(var(--spacing) * 24);
+    }
+    .lg\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
 }

@@ -72,11 +72,114 @@
         </div>
     </header>
     <main>
-        <section class="py-8 pl-4 flex flex-col gap-5 bg-orange-100">
+        <section class="py-8 pl-10 flex flex-col gap-5 bg-orange-100">
             <p class="font-semibold text-sm text-amber-800">CONFIDENTIAL CONTACT & APPOINTMENTS</p>
             <h2 class="font-semibold text-5xl">Reaching out is a <em class="text-amber-800">first step.</em></h2>
-            <p class="text-xs w-[50%] leading-loose">Whatever your situation, you deserve to be listened to and supported. All requests are 
+            <p class="text-xs w-[50%] leading-loose">Whatever your situation, you deserve to be listened to and
+                supported. All requests are
                 handled privately by authorized ATHAR staff and are never displayed publicly.</p>
+        </section>
+        <section class=" flex py-10 px-8 gap-10">
+            <div class="flex flex-col gap-5 bg-orange-50 border rounded-2xl p-10 w-[80%] h-fit">
+                <div class=" flex flex-col gap-3">
+                    <h2 class="font-semibold text-[1.7rem]">Request support or an appointment</h2>
+                    <p class="text-sm">Share only what feels comfortable. You may use a pseudonym.</p>
+                </div>
+                <div class="flex items-center gap-17">
+                    <div class="flex flex-col gap-2 ">
+                        <label class="text-xs pr-10" for="">Name or optional pseudonym</label>
+                        <input type="text" class="input outline-none" placeholder="e.g., Salma or a pseudonym" name=""
+                            id="">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="pr-31 text-xs" for="">Email or phone</label>
+                        <input type="text" class="input outline-none" placeholder="Safe email or phone number" name=""
+                            id="">
+                    </div>
+                </div>
+                <div class="flex gap-18">
+                    <div class="flex flex-col gap-2">
+                        <label class="pr-15 text-xs" for="">Preferred contact method</label>
+                        <select class="select  outline-none" name="" id="">
+                            <option hidden value="">Contact Method</option>
+                            <option value="">Email</option>
+                            <option value="">WhatsApp</option>
+                            <option value="">Phone Number</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="pr-20 w-[16vw] text-xs" for="">Preferred language</label>
+                        <select class="select outline-none " name="" id="">
+                            <option hidden value="">Language</option>
+                            <option value="">Arabic</option>
+                            <option value="">English</option>
+                            <option value="">French</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex gap-15">
+                    <div class="flex flex-col gap-2">
+                        <label class="pr-10 w-[16vw]  text-xs" for="">Type of support requested </label>
+                        <select class="select  outline-none" name="" id="">
+                            <option hidden value="">Select a Program</option>
+                            <option value="">Psychological support</option>
+                            <option value="">Legal Support</option>
+                            <option value="">Professional Empowerment</option>
+                            <option value="">Group Support Meetings</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs w-[17vw] pr-8" for="">Request an appointment</label>
+                        <input type="date" class="input outline-none" placeholder="e.g., Salma or a pseudonym" name=""
+                            id="">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 ">
+                    <label class="text-xs" for="">Message </label>
+                    <textarea class="textarea" placeholder="Tell us briefly how we can support you..." name="" id=""
+                        rows="3"></textarea>
+                </div>
+                <div class="flex items-center justify-center gap-4">
+                    <input type="checkbox" name="" id="">
+                    <p class="text-sm">I consent to ATHAR securely saving this request and notifying authorized <br>
+                        support staff so
+                        they can respond to me confidentially.</p>
+                </div>
+                <div class="flex justify-end">
+                    <p class=" bg-amber-900 text-white  rounded-3xl text-sm btn">Send Request </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-4 p-8 bg-orange-100 rounded-3xl">
+                    <h2 class="font-semibold text-3xl text-amber-900">* Emergency Notice</h2>
+                    <p class="text-sm leading-loose">This website is not an emergency response service. If you or
+                        someone you know is in immediate danger, please contact verified
+                        local emergency resources right away:</p>
+                    <p class="text-lg"><span class="font-bold">Emergency Police / Medical:</span> 112 or 911 (local
+                        emergency line)</p>
+                    <p class="text-lg"><span class="font-bold">National Women's Support Hotline: </span> 8383 (24/7
+                        confidential)</p>
+                    <p class="text-lg"><span class="font-bold">Safe Shelter Coordination:</span> 1919</p>
+                </div>
+                <div class="flex flex-col gap-4 p-8 bg-orange-100 rounded-3xl">
+                    <h2 class="font-semibold text-3xl text-amber-900">Center Information</h2>
+                    <p class="text-sm leading-loose"><i
+                            class="bi bi-envelope pr-2 text-[1rem] text-amber-900"></i>SUPPORT EMAIL <br>
+                        support@athar-center.org</p>
+                    <p class="text-sm leading-loose"><i
+                            class="bi bi-clock pr-2 text-[1rem] text-amber-900"></i>LISTENING HOURS <br> Sun–Thu, 9:00
+                        AM–5:00 PM</p>
+                    <p class="text-sm leading-loose"><i class="bi bi-geo-alt pr-2 text-[1rem] text-amber-900"></i>CENTER
+                        LOCATION <br> Al-Yasmin Community Hub, Suite 4 (By
+                        confidential appointment)</p>
+                    <hr>
+                    <div class="flex gap-5">
+                        <span>CONNECT:</span>
+                        <a class="text-amber-900" href="">Instagram</a>
+                        <a class="text-amber-900" href="">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

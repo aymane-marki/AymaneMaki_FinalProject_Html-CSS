@@ -3119,11 +3119,23 @@
     .max-sm\:w-4xl {
       width: var(--container-4xl);
     }
+    .max-sm\:w-\[20\] {
+      width: 20;
+    }
+    .max-sm\:w-\[20vw\] {
+      width: 20vw;
+    }
+    .max-sm\:w-fit {
+      width: fit-content;
+    }
     .max-sm\:flex-col {
       flex-direction: column;
     }
     .max-sm\:items-center {
       align-items: center;
+    }
+    .max-sm\:gap-2 {
+      gap: calc(var(--spacing) * 2);
     }
     .max-sm\:gap-5 {
       gap: calc(var(--spacing) * 5);
@@ -3174,6 +3186,12 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:w-\[16vw\] {
+      width: 16vw;
+    }
+    .lg\:w-\[17vw\] {
+      width: 17vw;
+    }
     .lg\:w-\[33\%\] {
       width: 33%;
     }
@@ -3195,6 +3213,15 @@
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
+    .lg\:gap-15 {
+      gap: calc(var(--spacing) * 15);
+    }
+    .lg\:gap-17 {
+      gap: calc(var(--spacing) * 17);
+    }
+    .lg\:gap-18 {
+      gap: calc(var(--spacing) * 18);
+    }
     .lg\:gap-20 {
       gap: calc(var(--spacing) * 20);
     }
@@ -3209,6 +3236,9 @@
     }
     .lg\:py-20 {
       padding-block: calc(var(--spacing) * 20);
+    }
+    .lg\:pr-15 {
+      padding-right: calc(var(--spacing) * 15);
     }
     .lg\:pl-20 {
       padding-left: calc(var(--spacing) * 20);

@@ -75,17 +75,17 @@
         <section class="py-8 pl-10 flex flex-col gap-5 bg-orange-100">
             <p class="font-semibold text-sm text-amber-800">CONFIDENTIAL CONTACT & APPOINTMENTS</p>
             <h2 class="font-semibold text-5xl">Reaching out is a <em class="text-amber-800">first step.</em></h2>
-            <p class="text-xs w-[50%] leading-loose">Whatever your situation, you deserve to be listened to and
+            <p class="text-xs lg:w-[50%] leading-loose">Whatever your situation, you deserve to be listened to and
                 supported. All requests are
                 handled privately by authorized ATHAR staff and are never displayed publicly.</p>
         </section>
-        <section class=" flex py-10 px-8 gap-10">
-            <div class="flex flex-col gap-5 bg-orange-50 border rounded-2xl p-10 w-[80%] h-fit">
+        <section class=" flex py-10 px-8 gap-10 max-sm:flex-col">
+            <div class="flex flex-col gap-5 bg-orange-50 border rounded-2xl p-10 lg:w-[80%] h-fit">
                 <div class=" flex flex-col gap-3">
                     <h2 class="font-semibold text-[1.7rem]">Request support or an appointment</h2>
                     <p class="text-sm">Share only what feels comfortable. You may use a pseudonym.</p>
                 </div>
-                <div class="flex items-center gap-17">
+                <div class="flex lg:items-center lg:gap-17 max-sm:gap-5 max-sm:flex-col">
                     <div class="flex flex-col gap-2 ">
                         <label class="text-xs pr-10" for="">Name or optional pseudonym</label>
                         <input type="text" class="input outline-none" placeholder="e.g., Salma or a pseudonym" name=""
@@ -97,9 +97,9 @@
                             id="">
                     </div>
                 </div>
-                <div class="flex gap-18">
+                <div class="flex lg:gap-18 max-sm:gap-5 max-sm:flex-col">
                     <div class="flex flex-col gap-2">
-                        <label class="pr-15 text-xs" for="">Preferred contact method</label>
+                        <label class="pr-15 max-sm:w-fit text-xs" for="">Preferred contact method</label>
                         <select class="select  outline-none" name="" id="">
                             <option hidden value="">Contact Method</option>
                             <option value="">Email</option>
@@ -108,7 +108,7 @@
                         </select>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <label class="pr-20 w-[16vw] text-xs" for="">Preferred language</label>
+                        <label class="pr-20 lg:w-[16vw] max-sm:w-fit text-xs" for="">Preferred language</label>
                         <select class="select outline-none " name="" id="">
                             <option hidden value="">Language</option>
                             <option value="">Arabic</option>
@@ -117,9 +117,9 @@
                         </select>
                     </div>
                 </div>
-                <div class="flex gap-15">
+                <div class="flex lg:gap-15 max-sm:gap-5 max-sm:flex-col">
                     <div class="flex flex-col gap-2">
-                        <label class="pr-10 w-[16vw]  text-xs" for="">Type of support requested </label>
+                        <label class="pr-10 lg:w-[16vw] max-sm:w-fit text-xs" for="">Type of support requested </label>
                         <select class="select  outline-none" name="" id="">
                             <option hidden value="">Select a Program</option>
                             <option value="">Psychological support</option>
@@ -129,7 +129,7 @@
                         </select>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <label class="text-xs w-[17vw] pr-8" for="">Request an appointment</label>
+                        <label class="text-xs lg:w-[17vw] max-sm:w-fit pr-8" for="">Request an appointment</label>
                         <input type="date" class="input outline-none" placeholder="e.g., Salma or a pseudonym" name=""
                             id="">
                     </div>

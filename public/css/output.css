@@ -3139,6 +3139,12 @@
   .w-\[20vw\] {
     width: 20vw;
   }
+  .w-\[30\] {
+    width: 30;
+  }
+  .w-\[30vw\] {
+    width: 30vw;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
@@ -3367,6 +3373,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -3420,6 +3429,24 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .rounded-\[4xl\] {
+    border-radius: 4xl;
+  }
+  .rounded-\[7rem\] {
+    border-radius: 7rem;
+  }
+  .rounded-\[8rem\] {
+    border-radius: 8rem;
+  }
+  .rounded-\[10\] {
+    border-radius: 10;
+  }
+  .rounded-\[10rem\] {
+    border-radius: 10rem;
   }
   .rounded-\[40px\] {
     border-radius: 40px;
@@ -3831,8 +3858,20 @@
   .pt-7 {
     padding-top: calc(var(--spacing) * 7);
   }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pt-25 {
+    padding-top: calc(var(--spacing) * 25);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
   }
   .pr-1 {
     padding-right: var(--spacing);
@@ -3923,6 +3962,12 @@
   }
   .pr-\[15rem\] {
     padding-right: 15rem;
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-1 {
     padding-left: var(--spacing);
@@ -4216,6 +4261,207 @@
     }
   }
   @media (hover: hover) {
+    @layer daisyui.l1.l2.l3 {
+      :where(.hover\:btn:hover) {
+        width: unset;
+      }
+    }
+    .prose :where(a.hover\:btn:hover:not(.btn-link)):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+      text-decoration-line: none;
+    }
+    @layer daisyui.l1.l2.l3 {
+      .hover\:btn:hover {
+        --size: calc(var(--size-field, 0.25rem) * 10);
+        --btn-p: 1rem;
+        --btn-fg: var(--color-base-content);
+        display: inline-flex;
+        flex-shrink: 0;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: calc(0.25rem * 1.5);
+        text-align: center;
+        vertical-align: middle;
+        outline-offset: 2px;
+        webkit-user-select: none;
+        user-select: none;
+        font-weight: 600;
+        border-start-start-radius: var(--join-ss, var(--radius-field));
+        border-start-end-radius: var(--join-se, var(--radius-field));
+        border-end-start-radius: var(--join-es, var(--radius-field));
+        border-end-end-radius: var(--join-ee, var(--radius-field));
+        border-width: var(--border);
+        touch-action: manipulation;
+        transition-property: color, background-color, border-color, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transition-duration: 0.2s;
+        --btn-bg: var(--btn-color, var(--color-base-200));
+        --btn-border: var(--btn-color, var(--color-base-200));
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .hover\:btn:hover {
+          --btn-border: color-mix(
+      in oklab,
+      var(--btn-color, var(--color-base-200)),
+      #000 calc(var(--depth) * 5%)
+    );
+        }
+      }
+      .hover\:btn:hover {
+        --btn-soft-bg: initial;
+        --btn-shadow: 0 3px 2px -2px var(--btn-bg),
+      0 4px 3px -2px var(--btn-bg);
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .hover\:btn:hover {
+          --btn-shadow: 0 3px 2px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000),
+      0 4px 3px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000);
+        }
+      }
+      .hover\:btn:hover {
+        --btn-inset: 0 0.5px 0 0.5px oklch(100% 0 0 / calc(var(--depth) * 6%));
+        height: var(--size);
+        padding-inline: var(--btn-p);
+        font-size: var(--fontsize, 0.875rem);
+        background-color: var(--btn-bg);
+        color: var(--btn-fg);
+        border-color: var(--btn-border);
+        border-style: var(--btn-border-style, solid);
+        outline-color: var(--btn-color, var(--color-base-content));
+        --tw-prose-links: var(--btn-fg);
+        background-image: none, var(--fx-noise);
+        background-size: auto, calc(var(--noise, 0) * 100%);
+        text-shadow: 0 0.5px oklch(100% 0 0 / calc(var(--depth) * 0.15));
+        box-shadow: var(--btn-inset) inset, var(--btn-shadow);
+      }
+      .hover\:btn:hover:is([type="checkbox"], [type="radio"]) {
+        appearance: none;
+        &[aria-label]::after {
+          --tw-content: attr(aria-label);
+          content: var(--tw-content);
+        }
+      }
+      .hover\:btn:hover:where(:checked:not(.filter [type="radio"].hover\:btn)) {
+        --btn-color: var(--color-primary);
+        --btn-fg: var(--color-primary-content);
+      }
+    }
+    @layer daisyui.l1 {
+      @media (hover: hover) {
+        .hover\:btn:hover:hover {
+          --btn-bg: var(--btn-color, var(--color-base-200));
+          @supports (color: color-mix(in lab, red, red)) {
+            --btn-bg: color-mix(in oklab, var(--btn-color, var(--color-base-200)), #000 7%);
+          }
+          color: var(--btn-fg);
+          --btn-border: var(--btn-bg);
+          @supports (color: color-mix(in lab, red, red)) {
+            --btn-border: color-mix(in oklab, var(--btn-bg), #000 calc(var(--depth) * 5%));
+          }
+          --btn-border-style: solid;
+          --btn-inset: 0 0.5px 0 0.5px oklch(100% 0 0 / calc(var(--depth) * 6%));
+          --btn-shadow: 0 3px 2px -2px var(--btn-bg),
+          0 4px 3px -2px var(--btn-bg);
+          @supports (color: color-mix(in lab, red, red)) {
+            --btn-shadow: 0 3px 2px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000),
+          0 4px 3px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000);
+          }
+        }
+      }
+      .hover\:btn:hover:active:not(.btn-active, [aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+        translate: 0 0.5px;
+        --btn-bg: var(--btn-color, var(--color-base-200));
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-bg: color-mix(in oklab, var(--btn-color, var(--color-base-200)), #000 5%);
+        }
+        color: var(--btn-fg, var(--color-base-content));
+        --btn-border: var(--btn-color, var(--color-base-200));
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-border: color-mix(in oklab, var(--btn-color, var(--color-base-200)), #000 7%);
+        }
+        --btn-border-style: solid;
+        --btn-inset: 0 0 0 0 oklch(0% 0 0/0);
+        --btn-shadow: 0 0 0 0 oklch(0% 0 0/0);
+      }
+      .hover\:btn:hover:where(:checked:not(.filter [type="radio"].hover\:btn), :not([type="radio"], [type="checkbox"]):focus-visible ) {
+        --btn-bg: var(--btn-color, var(--color-base-200));
+        color: var(--btn-fg, var(--color-base-content));
+        --btn-border: var(--btn-bg);
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-border: color-mix(in oklab, var(--btn-bg), #000 calc(var(--depth) * 5%));
+        }
+        --btn-border-style: solid;
+        --btn-inset: 0 0.5px 0 0.5px oklch(100% 0 0 / calc(var(--depth) * 6%));
+        --btn-shadow: 0 3px 2px -2px var(--btn-bg),
+        0 4px 3px -2px var(--btn-bg);
+        @supports (color: color-mix(in lab, red, red)) {
+          --btn-shadow: 0 3px 2px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000),
+        0 4px 3px -2px color-mix(in oklab, var(--btn-bg) calc(var(--depth) * 30%), #0000);
+        }
+        isolation: isolate;
+      }
+      .hover\:btn:hover:focus-visible, .hover\:btn:hover:has(:focus-visible) {
+        outline-width: 2px;
+        outline-style: solid;
+        isolation: isolate;
+      }
+    }
+    @layer daisyui.l1.l2 {
+      .hover\:btn:hover:is([aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+        --btn-bg: var(--btn-color, var(--color-base-200));
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .hover\:btn:hover:is([aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+          --btn-bg: color-mix(in oklab, var(--btn-color, var(--color-base-200)), #000 5%);
+        }
+      }
+      .hover\:btn:hover:is([aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+        color: var(--btn-fg, var(--color-base-content));
+        --btn-border: var(--btn-color, var(--color-base-200));
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .hover\:btn:hover:is([aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+          --btn-border: color-mix(in oklab, var(--btn-color, var(--color-base-200)), #000 7%);
+        }
+      }
+      .hover\:btn:hover:is([aria-pressed="true"], [aria-checked="true"], [aria-current]:not([aria-current="false"], [aria-current=""]) ) {
+        --btn-border-style: solid;
+        --btn-inset: 0 0 0 0 oklch(0% 0 0/0);
+        --btn-shadow: 0 0 0 0 oklch(0% 0 0/0);
+        isolation: isolate;
+      }
+    }
+    @layer daisyui {
+      .hover\:btn:hover:is(.btn-disabled, :disabled, [disabled], [aria-disabled="true"]) {
+        pointer-events: none;
+        color: var(--color-base-content);
+      }
+      @supports (color: color-mix(in lab, red, red)) {
+        .hover\:btn:hover:is(.btn-disabled, :disabled, [disabled], [aria-disabled="true"]) {
+          color: color-mix(in oklch, var(--color-base-content) 20%, #0000);
+        }
+      }
+      .hover\:btn:hover:is(.btn-disabled, :disabled, [disabled], [aria-disabled="true"]) {
+        --btn-bg: #0000;
+        --btn-border: #0000;
+        background-image: none;
+        --btn-inset: 0 0 0 0 oklch(0% 0 0/0);
+        --btn-shadow: 0 0 0 0 oklch(0% 0 0/0);
+      }
+      .hover\:btn:hover:is(.btn-disabled, :disabled, [disabled], [aria-disabled="true"]):not(.btn-link, .btn-ghost) {
+        background-color: var(--color-base-content);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-base-content) 10%, transparent);
+        }
+      }
+      @media (forced-colors: active) {
+        .hover\:btn:hover:is(.btn-disabled, :disabled, [disabled], [aria-disabled="true"]) {
+          color: GrayText;
+          border-color: GrayText;
+        }
+      }
+    }
     .hover\:-translate-y-1:hover {
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -4223,6 +4469,27 @@
     .hover\:-translate-y-2:hover {
       --tw-translate-y: calc(var(--spacing) * -2);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    @layer daisyui.l1.l2.l3 {
+      .hover\:link:hover {
+        cursor: pointer;
+        text-decoration-line: underline;
+      }
+      .hover\:link:hover:focus {
+        --tw-outline-style: none;
+        outline-style: none;
+        @media (forced-colors: active) {
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+        }
+      }
+      .hover\:link:hover:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+    }
+    .hover\:cursor-pointer:hover {
+      cursor: pointer;
     }
     .hover\:bg-amber-800:hover {
       background-color: var(--color-amber-800);
@@ -4333,6 +4600,9 @@
     }
     .lg\:w-\[50\%\] {
       width: 50%;
+    }
+    .lg\:w-\[60\%\] {
+      width: 60%;
     }
     .lg\:w-\[80\%\] {
       width: 80%;

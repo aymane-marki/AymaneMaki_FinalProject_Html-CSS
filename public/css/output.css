@@ -2927,6 +2927,21 @@
       height: var(--size);
       padding-inline: calc(var(--size) / 2 - var(--border));
     }
+    .footer {
+      display: grid;
+      width: 100%;
+      grid-auto-flow: row;
+      place-items: start;
+      column-gap: calc(0.25rem * 4);
+      row-gap: calc(0.25rem * 10);
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    .footer > :not(:where(script, style, template)) {
+      display: grid;
+      place-items: start;
+      gap: calc(0.25rem * 2);
+    }
     .navbar-end {
       display: inline-flex;
       align-items: center;
@@ -3779,6 +3794,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .p-15 {
+    padding: calc(var(--spacing) * 15);
+  }
   @layer daisyui.l1.l2.l3 {
     .menu-title {
       padding-inline: calc(0.25rem * 3);
@@ -3860,6 +3878,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
@@ -4516,6 +4537,18 @@
     }
   }
   @media (width < 40rem) {
+    .max-sm\:bottom-10 {
+      bottom: calc(var(--spacing) * 10);
+    }
+    .max-sm\:bottom-20 {
+      bottom: calc(var(--spacing) * 20);
+    }
+    .max-sm\:bottom-30 {
+      bottom: calc(var(--spacing) * 30);
+    }
+    .max-sm\:block {
+      display: block;
+    }
     .max-sm\:hidden {
       display: none;
     }
@@ -4540,6 +4573,9 @@
     .max-sm\:gap-2 {
       gap: calc(var(--spacing) * 2);
     }
+    .max-sm\:gap-3 {
+      gap: calc(var(--spacing) * 3);
+    }
     .max-sm\:gap-5 {
       gap: calc(var(--spacing) * 5);
     }
@@ -4551,6 +4587,9 @@
     }
     .max-sm\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
+    }
+    .max-sm\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
     }
     .max-sm\:py-7 {
       padding-block: calc(var(--spacing) * 7);
@@ -4572,6 +4611,10 @@
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
+    .max-sm\:text-7xl {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
     .max-sm\:leading-16 {
       --tw-leading: calc(var(--spacing) * 16);
       line-height: calc(var(--spacing) * 16);
@@ -4583,6 +4626,12 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:bottom-20 {
+      bottom: calc(var(--spacing) * 20);
+    }
+    .lg\:left-70 {
+      left: calc(var(--spacing) * 70);
+    }
     .lg\:flex {
       display: flex;
     }
@@ -4598,8 +4647,14 @@
     .lg\:w-\[33\%\] {
       width: 33%;
     }
+    .lg\:w-\[40vw\] {
+      width: 40vw;
+    }
     .lg\:w-\[50\%\] {
       width: 50%;
+    }
+    .lg\:w-\[50vw\] {
+      width: 50vw;
     }
     .lg\:w-\[60\%\] {
       width: 60%;
@@ -4643,6 +4698,12 @@
     .lg\:py-20 {
       padding-block: calc(var(--spacing) * 20);
     }
+    .lg\:pt-20 {
+      padding-top: calc(var(--spacing) * 20);
+    }
+    .lg\:pt-25 {
+      padding-top: calc(var(--spacing) * 25);
+    }
     .lg\:pr-15 {
       padding-right: calc(var(--spacing) * 15);
     }
@@ -4651,6 +4712,10 @@
     }
     .lg\:pl-24 {
       padding-left: calc(var(--spacing) * 24);
+    }
+    .lg\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
     .lg\:text-6xl {
       font-size: var(--text-6xl);
